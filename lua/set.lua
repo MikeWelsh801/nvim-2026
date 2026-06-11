@@ -6,6 +6,10 @@ opt.relativenumber = true
 -- I'm not sold on this, but I'll try it out.
 opt.cursorline = true
 
+-- prevent the built-in vim.lsp.completion autotrigger from selecting the first item
+opt.completeopt = { "menuone", "noselect", "popup" }
+opt.winborder = 'rounded'
+
 vim.cmd([[
     set rtp^="/home/newuser/.opam/default/share/ocp-indent/vim"
     filetype plugin on
